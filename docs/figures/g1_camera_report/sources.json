@@ -1,0 +1,85 @@
+{
+  "created_on": "2026-11-19",
+  "purpose": "Bilingual milestone reports in docs/milestones/; figures from saved simulation recordings and measured tracking data.",
+  "images": [
+    {
+      "image": "g16_four_directions.jpg",
+      "source_video": "outputs/g1_camera/2026-11-19_g16_four_direction/2x/video.mp4",
+      "video_sha256": "0420c69eaf395898e80966b70014670e37cb54ece9cfa43396255111790d0164",
+      "fps": 25,
+      "frames": [
+        {
+          "phase": "Forward",
+          "frame_index_zero_based": 302,
+          "video_time_s": 12.08
+        },
+        {
+          "phase": "Backward",
+          "frame_index_zero_based": 478,
+          "video_time_s": 19.12
+        },
+        {
+          "phase": "Left",
+          "frame_index_zero_based": 652,
+          "video_time_s": 26.08
+        },
+        {
+          "phase": "Right",
+          "frame_index_zero_based": 828,
+          "video_time_s": 33.12
+        }
+      ],
+      "transform": "Four resized full frames arranged in a grid, with direction labels outside the frames."
+    },
+    {
+      "image": "g16_4x_position_lag.jpg",
+      "source_video": "outputs/g1_camera/2026-11-19_g16_four_direction/4x/video.mp4",
+      "video_sha256": "4f41c6228e42424a3dbeca5ec1ed64f999d7920706f8c91e24ec28b111e1ef08",
+      "fps": 25,
+      "frame_index_zero_based": 624,
+      "video_time_s": 24.96,
+      "peak_error_sample_trajectory_time_s": 15.36,
+      "peak_position_error_cm": 24.049581587314606,
+      "transform": "Resized full frame nearest the peak-error sample; JPEG encoding only."
+    },
+    {
+      "image": "g16_orientation_frames.jpg",
+      "source_video": "outputs/g1_camera/2026-11-19_g16_orientation_tracking/video.mp4",
+      "video_sha256": "c71b9e0e2c91adb0aebe4c2bf9e49360cb7de3e6f81f4c7972d8553cf3457980",
+      "fps": 25.0,
+      "frames": [
+        {
+          "label": "Roll +20 deg",
+          "trajectory_time_s": 3,
+          "frame_index_zero_based": 314,
+          "video_time_s": 12.56
+        },
+        {
+          "label": "Pitch -20 deg",
+          "trajectory_time_s": 21,
+          "frame_index_zero_based": 764,
+          "video_time_s": 30.56
+        },
+        {
+          "label": "Yaw +30 deg",
+          "trajectory_time_s": 27,
+          "frame_index_zero_based": 914,
+          "video_time_s": 36.56
+        },
+        {
+          "label": "Final recorded frame",
+          "trajectory_time_s": 52.64,
+          "frame_index_zero_based": 1555,
+          "video_time_s": 62.2
+        }
+      ],
+      "transform": "Four resized full frames, labels outside frames; no simulation content altered."
+    },
+    {
+      "image": "g16_orientation_tracking.png",
+      "source_csv": "outputs/g1_camera/2026-11-19_g16_orientation_tracking/tracking.csv",
+      "csv_sha256": "eedd99c7365b97cd9f4f9dcc1d2649aca11c52597910f1e3d3a795ec3dae5e27",
+      "transform": "World-frame quaternions converted to xyz Euler degrees for display; errors use saved Euclidean position and geodesic rotation norms."
+    }
+  ]
+}

@@ -66,6 +66,10 @@ uv run scripts/eval.py --task Velocity-T1-v0 --num_envs 32 --checkpoint <path>
 
 See the [full documentation](https://nvidia-isaac.github.io/WBC-AGILE/) for installation details, training guides, task descriptions, and deployment instructions.
 
+For the G1 pretrained-walking + right-arm IK baseline and the camera stabilization training plan, see [G1 camera trajectory tracking](G1_CAMERA_PLAN.md).
+The wrist-driven baseline derives base position, heading and walking velocity from a world-space wrist trajectory. Run `uv run --frozen scripts/play_g1_camera.py` for a multidirectional wrist-only loop, or supply `--trajectory planner.json`.
+Camera-baseline runs save tracking data under [`outputs/`](outputs/README.md). Video and documents are opt-in: use `--video` to record, `--report` for English/Chinese reports, or both when requested.
+
 ## Office Hour and FAQ
 
 We hosted a robotics livestream office hour providing an in-depth walkthrough of the AGILE framework.

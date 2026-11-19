@@ -1,12 +1,10 @@
 **/__pycache__/
 *.egg-info
 
-*.cursor
-*.cursorrules
+
 logs/**
 .vscode/**
 .git_info/**
-outputs/**
 wandb/**
 assets/**
 agile/data/policy/eval/**
@@ -14,11 +12,4 @@ agile/rl_env/assets/unitree_description/
 agile/rl_env/assets/unitree_mujoco/
 
 **/exported/**
-
-*IO_descriptors.yaml
-
-fallen_states_cache/
-
-docs/build/
-.venv/
-.agile_python/
+outputs/**
